@@ -1,0 +1,1387 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo
+Eand16
+Z1 w1616001118
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 22
+R0
+Z4 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/And16.vhd
+Z5 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/And16.vhd
+l0
+L4 1
+Vh]ej`Ck73hG:Zd8Jo=jjc1
+!s100 4g2NdCHBc<J3K7jR5WC:B0
+Z6 OV;C;2020.1;71
+33
+Z7 !s110 1616001120
+!i10b 1
+Z8 !s108 1616001120.000000
+Z9 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/And16.vhd|
+Z10 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/And16.vhd|
+!i113 1
+Z11 o-quiet -2008 -work lib
+Z12 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+DEx4 work 5 and16 0 22 h]ej`Ck73hG:Zd8Jo=jjc1
+!i122 22
+l12
+L11 5
+V1mZ^gXES>3dmbge0SHz??1
+!s100 M4aA[F>g<3L>IIJQ93jZ10
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebarrelshifter16
+Z13 w1616000142
+R2
+R3
+!i122 20
+R0
+Z14 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/BarrelShifter16.vhd
+Z15 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/BarrelShifter16.vhd
+l0
+L4 1
+V5[h]I7=h]?dc4<<Vlg5T<0
+!s100 W]^JZCg1HIZ[U7cW:3Q^60
+R6
+33
+Z16 !s110 1616001093
+!i10b 1
+Z17 !s108 1616001093.000000
+Z18 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/BarrelShifter16.vhd|
+Z19 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/BarrelShifter16.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 15 barrelshifter16 0 22 5[h]I7=h]?dc4<<Vlg5T<0
+!i122 20
+l13
+Z20 L12 5
+Va>;?1Cl@Y9Q@oZE12^_530
+!s100 n[lk8QaMdBBQX3kVWmVDh1
+R6
+33
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Ebinariotobcd
+R13
+Z21 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z22 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 4
+R0
+Z23 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/binarioToBcd.vhd
+Z24 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/binarioToBcd.vhd
+l0
+L8 1
+VI19a<iFWbfZ0SWGf=`F:20
+!s100 :4FYRUlC<2Fb@bHhj3LM<0
+R6
+33
+Z25 !s110 1616001092
+!i10b 1
+Z26 !s108 1616001092.000000
+Z27 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/binarioToBcd.vhd|
+Z28 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/binarioToBcd.vhd|
+!i113 1
+R11
+R12
+Abehaviour
+R21
+R22
+R2
+R3
+DEx4 work 12 binariotobcd 0 22 I19a<iFWbfZ0SWGf=`F:20
+!i122 4
+l27
+L17 77
+VA<n<EJ<8U4RkKCGaz5CDV3
+!s100 oi0D7`:`AM=OP43658iCn2
+R6
+33
+R25
+!i10b 1
+R26
+R27
+R28
+!i113 1
+R11
+R12
+Ecircuito
+R13
+R2
+R3
+!i122 3
+R0
+Z29 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/circuito.vhd
+Z30 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/circuito.vhd
+l0
+L4 1
+VQBQIj`R>78621b^V>3oQg1
+!s100 o]3AXHENE2[1YZDZ9QMnG1
+R6
+33
+R25
+!i10b 1
+R26
+Z31 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/circuito.vhd|
+Z32 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/circuito.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 8 circuito 0 22 QBQIj`R>78621b^V>3oQg1
+!i122 3
+l12
+Z33 L10 5
+VkdOB3]mMlJ`8=[6dC9=L61
+!s100 4eDS@`Y:mT8hBN0iU>QUA0
+R6
+33
+R25
+!i10b 1
+R26
+R31
+R32
+!i113 1
+R11
+R12
+Edetectordemoedas
+Z34 w1616005566
+R2
+R3
+!i122 41
+R0
+Z35 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd
+Z36 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd
+l0
+L4 1
+VSd0AX;8RlG:F_LO9J_6j^3
+!s100 eBG_FEDA1m8g9Gonl?[8k0
+R6
+33
+Z37 !s110 1616005579
+!i10b 1
+Z38 !s108 1616005579.000000
+Z39 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd|
+Z40 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/detectorDeMoedas.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 16 detectordemoedas 0 22 Sd0AX;8RlG:F_LO9J_6j^3
+!i122 41
+l12
+L10 10
+VN8QXebW]UMzBSC7Nz5mSD1
+!s100 L7ZjKYnJfFng>mG8B^O:i1
+R6
+33
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R11
+R12
+Edmux2way
+Z41 w1616004819
+R2
+R3
+!i122 39
+R0
+Z42 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd
+Z43 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd
+l0
+L4 1
+V>:IF]Koi99f<cJ0CmCAM51
+!s100 Mk4MPhHXoJhVbDN8OhUzJ0
+R6
+33
+Z44 !s110 1616004822
+!i10b 1
+Z45 !s108 1616004822.000000
+Z46 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd|
+Z47 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux2Way.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 8 dmux2way 0 22 >:IF]Koi99f<cJ0CmCAM51
+!i122 39
+l13
+L12 6
+VedNWO;VdgbAA_:4^o9ZDZ3
+!s100 >R?gH@H=bC5zbn>l1W;[e2
+R6
+33
+R44
+!i10b 1
+R45
+R46
+R47
+!i113 1
+R11
+R12
+Edmux4way
+R13
+R2
+R3
+!i122 18
+R0
+Z48 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd
+Z49 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd
+l0
+L4 1
+VchCWhU[f@SDYOfM[z`KAD3
+!s100 ;Fe6?`C@SB@=WbZbaI^E^0
+R6
+33
+R16
+!i10b 1
+R17
+Z50 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd|
+Z51 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux4Way.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 8 dmux4way 0 22 chCWhU[f@SDYOfM[z`KAD3
+!i122 18
+l15
+Z52 L14 5
+VGRfHBPl[GAgfUSJ;JH5c61
+!s100 3^2cJAMn5[ZgX8M0=f:Oe0
+R6
+33
+R16
+!i10b 1
+R17
+R50
+R51
+!i113 1
+R11
+R12
+Edmux8way
+R13
+R2
+R3
+!i122 17
+R0
+Z53 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd
+Z54 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd
+l0
+L4 1
+V4@:^4]]>d5jd<9PRAJQi32
+!s100 zC5^AWzR72_D_1oKAO8`>2
+R6
+33
+R16
+!i10b 1
+R17
+Z55 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd|
+Z56 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/DMux8Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 8 dmux8way 0 22 4@:^4]]>d5jd<9PRAJQi32
+!i122 17
+l19
+Z57 L18 5
+V=lA1=61_ZE[[G;XS`D6UJ2
+!s100 lhjaPJ9Dk<0hATO;1J;183
+R6
+33
+R16
+!i10b 1
+R17
+R55
+R56
+!i113 1
+R11
+R12
+Eimpressora
+R13
+R2
+R3
+!i122 1
+R0
+Z58 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/impressora.vhd
+Z59 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/impressora.vhd
+l0
+L4 1
+V2Vf]_[jCT:XbB[Tz[fgb@2
+!s100 3VLb^^iLS^2QPXha=FQ=@1
+R6
+33
+R25
+!i10b 1
+R26
+Z60 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/impressora.vhd|
+Z61 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/impressora.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 10 impressora 0 22 2Vf]_[jCT:XbB[Tz[fgb@2
+!i122 1
+l12
+L10 6
+VkZ>k?cFIU2A>QiUo2L;f[1
+!s100 <:@?PKM2PgYVchnABk^6o3
+R6
+33
+R25
+!i10b 1
+R26
+R60
+R61
+!i113 1
+R11
+R12
+Emux16
+R13
+R2
+R3
+!i122 16
+R0
+Z62 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux16.vhd
+Z63 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux16.vhd
+l0
+L4 1
+V^KK7>>=?KzfHlc;dK>^H53
+!s100 IzGKQCSkQ7RCdJh>^j0Q61
+R6
+33
+R16
+!i10b 1
+R17
+Z64 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux16.vhd|
+Z65 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux16.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 5 mux16 0 22 ^KK7>>=?KzfHlc;dK>^H53
+!i122 16
+l13
+R20
+Vaj01LaSlTKa?7hW^oc>Wn3
+!s100 oG_g2Z7B=_<54JNzBam821
+R6
+33
+R16
+!i10b 1
+R17
+R64
+R65
+!i113 1
+R11
+R12
+Emux2way
+R13
+R2
+R3
+!i122 15
+R0
+Z66 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd
+Z67 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd
+l0
+L4 1
+V5Md04iB]KYYIl:m:EPnQ[3
+!s100 L]VTV_?L9fN8g2_`K9nZQ2
+R6
+33
+R16
+!i10b 1
+R17
+Z68 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd|
+Z69 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux2Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 7 mux2way 0 22 5Md04iB]KYYIl:m:EPnQ[3
+!i122 15
+l13
+R20
+V>F_nY`>I@eRW1BlI:ZV?C3
+!s100 ;U^R<hQFR7B;QjSInZPMo3
+R6
+33
+R16
+!i10b 1
+R17
+R68
+R69
+!i113 1
+R11
+R12
+Emux4way
+Z70 w1616003694
+R2
+R3
+!i122 28
+R0
+Z71 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd
+Z72 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd
+l0
+L4 1
+VS6DJa:23Uele:d0oQjjO[0
+!s100 X`n8^nYIhlnNgIfP_EkID1
+R6
+33
+Z73 !s110 1616003696
+!i10b 1
+Z74 !s108 1616003696.000000
+Z75 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd|
+Z76 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux4Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 7 mux4way 0 22 S6DJa:23Uele:d0oQjjO[0
+!i122 28
+l15
+L14 19
+VTIMg<W>hfOkBL0c3fC0K00
+!s100 Li[?[JzVhm7Kcik^6^c:D2
+R6
+33
+R73
+!i10b 1
+R74
+R75
+R76
+!i113 1
+R11
+R12
+Emux4way16
+R13
+R2
+R3
+!i122 13
+R0
+Z77 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd
+Z78 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd
+l0
+L4 1
+VgIliodZR>K=jaJZeHi]]@1
+!s100 8]mCOPe5cHg3o24Lz?cGK0
+R6
+33
+R16
+!i10b 1
+R17
+Z79 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd|
+Z80 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux4Way16.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 9 mux4way16 0 22 gIliodZR>K=jaJZeHi]]@1
+!i122 13
+l15
+R52
+VYACY`Kn;9dlGlT<=_ci;i1
+!s100 UHUXb5TPef675[gEHHHTT2
+R6
+33
+R16
+!i10b 1
+R17
+R79
+R80
+!i113 1
+R11
+R12
+Emux8way
+R13
+R2
+R3
+!i122 12
+R0
+Z81 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd
+Z82 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd
+l0
+L4 1
+VcMIZim^j_>0TGlG7NC03C3
+!s100 ^ag5`^MlkFaAfCaX]@3>L0
+R6
+33
+R16
+!i10b 1
+R17
+Z83 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd|
+Z84 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux8Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 7 mux8way 0 22 cMIZim^j_>0TGlG7NC03C3
+!i122 12
+l19
+R57
+V5[CodR>1d;I_6jI8]]ehk3
+!s100 Ie8Aa;SR?gaTn16RGe[c]0
+R6
+33
+R16
+!i10b 1
+R17
+R83
+R84
+!i113 1
+R11
+R12
+Emux8way16
+R13
+R2
+R3
+!i122 11
+R0
+Z85 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd
+Z86 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd
+l0
+L4 1
+V7MWl=:zn]>Q>M5K]`_b<60
+!s100 @m115@68;o9gzO2VgfBG]0
+R6
+33
+R16
+!i10b 1
+R17
+Z87 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd|
+Z88 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Mux8Way16.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 9 mux8way16 0 22 7MWl=:zn]>Q>M5K]`_b<60
+!i122 11
+l19
+R57
+VXR_;;@fX1]lZ5IVm`KFAk2
+!s100 6:df9QZYK:^I6ZW8Zgck_2
+R6
+33
+R16
+!i10b 1
+R17
+R87
+R88
+!i113 1
+R11
+R12
+Enand_z01
+R13
+R2
+R3
+!i122 10
+R0
+Z89 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Nand.vhd
+Z90 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Nand.vhd
+l0
+L4 1
+VMV:88zTBEe:UQ96>jlUfI0
+!s100 0d61a09AXn6n_X_jb>Bo?2
+R6
+33
+R16
+!i10b 1
+R17
+Z91 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Nand.vhd|
+Z92 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Nand.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+DEx4 work 8 nand_z01 0 22 MV:88zTBEe:UQ96>jlUfI0
+!i122 10
+l13
+L12 4
+VgmedaE[cIG6HG?Zc`NOz20
+!s100 =^5mGJ3^jCjomNfP9B_k40
+R6
+33
+R16
+!i10b 1
+R17
+R91
+R92
+!i113 1
+R11
+R12
+Enor8way
+R13
+R2
+R3
+!i122 9
+R0
+Z93 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd
+Z94 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd
+l0
+L4 1
+VI6@ZGJd>JSC7UGzNAn6GU2
+!s100 bzc2JH[>FOP2l:COLj<IY2
+R6
+33
+R16
+!i10b 1
+R17
+Z95 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd|
+Z96 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Nor8Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 7 nor8way 0 22 I6@ZGJd>JSC7UGzNAn6GU2
+!i122 9
+l18
+Z97 L17 5
+VbonN<CIhej=B>?<5_86Ic2
+!s100 ?AiNRfI]6m8N]@0@KSN`a1
+R6
+33
+R16
+!i10b 1
+R17
+R95
+R96
+!i113 1
+R11
+R12
+Enot16
+R13
+R2
+R3
+!i122 8
+R0
+Z98 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Not16.vhd
+Z99 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Not16.vhd
+l0
+L4 1
+VC]SG@M]l`d<egUIK]zP2?0
+!s100 fYJ1`YCnUZe9F?2KLeD4V3
+R6
+33
+R16
+!i10b 1
+R17
+Z100 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Not16.vhd|
+Z101 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Not16.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 5 not16 0 22 C]SG@M]l`d<egUIK]zP2?0
+!i122 8
+l11
+R33
+VfM8eKCCLJoJ7`H7N30;Po3
+!s100 WQa7koFcG?Y]1;liUHc1C1
+R6
+33
+R16
+!i10b 1
+R17
+R100
+R101
+!i113 1
+R11
+R12
+Eor16
+R13
+R2
+R3
+!i122 7
+R0
+Z102 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Or16.vhd
+Z103 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Or16.vhd
+l0
+L4 1
+VFm015BPNjKE2P[ZaFANAP1
+!s100 >QKR87GJWMdVLQz<g8^hf0
+R6
+33
+R16
+!i10b 1
+R26
+Z104 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Or16.vhd|
+Z105 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Or16.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 4 or16 0 22 Fm015BPNjKE2P[ZaFANAP1
+!i122 7
+l12
+L11 4
+Vd>S>k3A8Jgb:CoXecKSda3
+!s100 UnohYfK6b_Z`jNKn^j4eF1
+R6
+33
+R16
+!i10b 1
+R26
+R104
+R105
+!i113 1
+R11
+R12
+Eor8way
+R13
+R2
+R3
+!i122 6
+R0
+Z106 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Or8Way.vhd
+Z107 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Or8Way.vhd
+l0
+L4 1
+V6_>9FK_U9`n7]^73i4MMa1
+!s100 Ag3dFfPkCD2FhoYEajciW3
+R6
+33
+R25
+!i10b 1
+R26
+Z108 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Or8Way.vhd|
+Z109 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/Or8Way.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 6 or8way 0 22 6_>9FK_U9`n7]^73i4MMa1
+!i122 6
+l18
+R97
+Vk[cBahlXQ[4]KM8mm:DHN3
+!s100 BYO__c_MKK^:e1YQl?7:V0
+R6
+33
+R25
+!i10b 1
+R26
+R108
+R109
+!i113 1
+R11
+R12
+Esevenseg
+R13
+R2
+R3
+!i122 0
+R0
+Z110 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd
+Z111 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd
+l0
+L4 1
+VgdITb;WTH[5cZbCd[CR:E0
+!s100 XWCP4A?:A0m34fY00Z:oS0
+R6
+33
+R25
+!i10b 1
+R26
+Z112 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd|
+Z113 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/sevenSeg.vhd|
+!i113 1
+R11
+R12
+Aarch
+R2
+R3
+DEx4 work 8 sevenseg 0 22 gdITb;WTH[5cZbCd[CR:E0
+!i122 0
+l11
+L10 4
+V4ORKN?iNe7Sgma^3fTzDT3
+!s100 >kM1]1G=^IOjOf:?[ZMcP2
+R6
+33
+R25
+!i10b 1
+R26
+R112
+R113
+!i113 1
+R11
+R12
+Etb_and16
+R13
+Z114 D^#x9 vunit_lib 13 vunit_context 0 22 5PF4h;N3nzRfAo898Q8WS3
+Z115 DPx9 vunit_lib 18 run_deprecated_pkg 0 22 06HHNn=l0Y?PoSLo8^<h00
+Z116 DPx9 vunit_lib 10 runner_pkg 0 22 NQlg?N:7cfzSYD?FX_C9W0
+Z117 DPx9 vunit_lib 7 run_pkg 0 22 L;71H6TCjU4gL1AJPm_Vd0
+Z118 DPx9 vunit_lib 13 run_types_pkg 0 22 ZfDWW?_fEaQBz>VkefFUV2
+Z119 DPx9 vunit_lib 20 check_deprecated_pkg 0 22 Y>TVz>[kI8XoP@P02gCOJ2
+Z120 DPx9 vunit_lib 9 check_pkg 0 22 k_?TDGU?=n?1Z0oahO>zF0
+Z121 DPx9 vunit_lib 11 checker_pkg 0 22 E?dhhcE;9VWnHLW[lW4`Y1
+Z122 DPx9 vunit_lib 8 stop_pkg 0 22 UjKiHFdPQ97>_>m`nM3cg3
+Z123 DPx9 vunit_lib 8 core_pkg 0 22 0M7EG>QDghVT?B78KOYPn0
+Z124 DPx9 vunit_lib 18 log_deprecated_pkg 0 22 Q7[lfBh_WC:ca^W64YP1U2
+Z125 DPx9 vunit_lib 9 print_pkg 0 22 z3A9G[B4JdMci]Ub;PK=S3
+Z126 DPx9 vunit_lib 4 path 0 22 ]@TR:IFM`TWfiVL<ZjY=I3
+Z127 DPx9 vunit_lib 15 log_handler_pkg 0 22 4LC?iW3FIdm8J@]^l:Fa_0
+Z128 DPx9 vunit_lib 8 ansi_pkg 0 22 h9cG]NHf=IYSX>SV5U_OM1
+Z129 DPx9 vunit_lib 14 log_levels_pkg 0 22 jGUFnEUH1mU?HKm3YRPGj3
+Z130 DPx9 vunit_lib 10 logger_pkg 0 22 Jj3MC9=bR4jQbFA1jSDXY2
+Z131 DPx9 vunit_lib 10 dictionary 0 22 _W8>On_YoEFWEDP8TQC@R0
+Z132 DPx9 vunit_lib 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
+Z133 D^#x9 vunit_lib 18 data_types_context 0 22 [Ik[<YbW8Ag;h5P``aP2g3
+Z134 DPx9 vunit_lib 8 dict_pkg 0 22 _EQKR[P[ibBW^<0mzPejD2
+Z135 DPx9 vunit_lib 19 byte_vector_ptr_pkg 0 22 nMb7G]QlQkbCia?ecQlOB1
+Z136 DPx9 vunit_lib 19 string_ptr_pool_pkg 0 22 ;oGa_UEi8nVncYkDRR_Aj1
+Z137 DPx9 vunit_lib 14 queue_pool_pkg 0 22 W_@1eWPT4E>cBF2g>m`PC0
+Z138 DPx9 vunit_lib 17 integer_array_pkg 0 22 o:H2ie>cVB<O<8]@gJG;:3
+Z139 DPx9 vunit_lib 19 external_string_pkg 0 22 iE_JL@S7G[ScLPziLPH3]3
+Z140 DPx9 vunit_lib 14 string_ptr_pkg 0 22 n[AzFb_A:6S@HQFZYcL]h0
+Z141 DPx9 vunit_lib 9 queue_pkg 0 22 CMi_fVS`R;@j5e>onMNln3
+Z142 DPx9 vunit_lib 27 integer_vector_ptr_pool_pkg 0 22 FX=7VbM]W@D7RN`^3N8aJ3
+Z143 DPx9 vunit_lib 17 codec_builder_pkg 0 22 lMzaQB]AGo[9c?7g60J_93
+Z144 DPx4 ieee 11 numeric_bit 0 22 G2;d`f^X6V]cQEn8_38:i1
+Z145 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z146 DPx4 ieee 12 math_complex 0 22 lndMRF4<kJnT_9]@:30S@3
+Z147 DPx9 vunit_lib 9 codec_pkg 0 22 VE]>YKnj@eiUJ<U1YSEXb3
+Z148 DPx9 vunit_lib 27 external_integer_vector_pkg 0 22 hl?S7F7[zeX8D09=mXj_W2
+Z149 DPx9 vunit_lib 22 integer_vector_ptr_pkg 0 22 dQHde;mb=n>VUWALE0?M33
+Z150 DPx9 vunit_lib 9 types_pkg 0 22 8X1EBI95Q8hI=Vi3D9DP;0
+Z151 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 23
+R0
+Z152 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_And16.vhd
+Z153 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_And16.vhd
+l0
+Z154 L13 1
+V1l8:dSVWjB<iIjT;WU>WZ3
+!s100 CN7c7aBK0baLh=7NmPS<<2
+R6
+33
+Z155 !s110 1616001125
+!i10b 1
+Z156 !s108 1616001125.000000
+Z157 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_And16.vhd|
+Z158 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_And16.vhd|
+!i113 1
+R11
+R12
+Atb
+R114
+R115
+R116
+R117
+R118
+R119
+R120
+R121
+R122
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R2
+R3
+DEx4 work 8 tb_and16 0 22 1l8:dSVWjB<iIjT;WU>WZ3
+!i122 23
+l32
+L17 80
+V_58XEK>b=zbOjozAC1l0Z1
+!s100 WJmoR^37l[LV^2c3[l:?h2
+R6
+33
+R155
+!i10b 1
+R156
+R157
+R158
+!i113 1
+R11
+R12
+Etb_detectordemoedas
+R13
+R114
+R115
+R116
+R117
+R118
+R119
+R120
+R121
+R122
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R2
+R3
+!i122 42
+R0
+Z159 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_detectorDeMoedas.vhd
+Z160 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_detectorDeMoedas.vhd
+l0
+R154
+VO:F4=jo^5=h6PWo7n]==g0
+!s100 gjX0E@?0FdV0Gc:RKlP8;1
+R6
+33
+Z161 !s110 1616005580
+!i10b 1
+R38
+Z162 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_detectorDeMoedas.vhd|
+!s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_detectorDeMoedas.vhd|
+!i113 1
+R11
+R12
+Atb
+R114
+R115
+R116
+R117
+R118
+R119
+R120
+R121
+R122
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R151
+R2
+R3
+DEx4 work 19 tb_detectordemoedas 0 22 O:F4=jo^5=h6PWo7n]==g0
+!i122 42
+l33
+L17 53
+VHklAk8g0am:P[]EVeDYf42
+!s100 MJ8a?d3M:3ZG:M9FPd6_90
+R6
+33
+R161
+!i10b 1
+R38
+R162
+Z163 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_detectorDeMoedas.vhd|
+!i113 1
+R11
+R12
+Etb_dmux2way
+R13
+R114
+R115
+R116
+R117
+R118
+R119
+R120
+R121
+R122
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R151
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R2
+R3
+!i122 40
+R0
+Z164 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_DMux2Way.vhd
+Z165 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_DMux2Way.vhd
+l0
+Z166 L12 1
+VG:gDjdXf`XMEEa6MSKYg91
+!s100 [1Z=A_3fz?JUHBkFamn6I2
+R6
+33
+R44
+!i10b 1
+R45
+Z167 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_DMux2Way.vhd|
+Z168 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_DMux2Way.vhd|
+!i113 1
+R11
+R12
+Atb
+R114
+R115
+R116
+R117
+R118
+R119
+R120
+R121
+R122
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R151
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R2
+R3
+DEx4 work 11 tb_dmux2way 0 22 G:gDjdXf`XMEEa6MSKYg91
+!i122 40
+l32
+L16 56
+VDm_GBa2jNQ_8VXCA117M30
+!s100 @DI4BcE3UzJlH?;L;jEf?1
+R6
+33
+R44
+!i10b 1
+R45
+R167
+R168
+!i113 1
+R11
+R12
+Etb_mux4way
+R13
+R114
+R115
+R116
+R117
+R118
+R119
+R120
+R121
+R122
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R151
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R2
+R3
+!i122 29
+R0
+Z169 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_Mux4Way.vhd
+Z170 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_Mux4Way.vhd
+l0
+R166
+VAda6XcZ=REYG4gJAeGf1g1
+!s100 jG^of^A;C2;2>ja<A[@JO0
+R6
+33
+R73
+!i10b 1
+R74
+Z171 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_Mux4Way.vhd|
+Z172 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/testes/tb_Mux4Way.vhd|
+!i113 1
+R11
+R12
+Atb
+R114
+R115
+R116
+R117
+R118
+R119
+R120
+R121
+R122
+R123
+R124
+R125
+R126
+R127
+R128
+R129
+R130
+R131
+R132
+R133
+R134
+R135
+R136
+R137
+R138
+R139
+R140
+R141
+R142
+R143
+R151
+R144
+R145
+R146
+R147
+R148
+R149
+R150
+R2
+R3
+DEx4 work 10 tb_mux4way 0 22 Ada6XcZ=REYG4gJAeGf1g1
+!i122 29
+l35
+L16 80
+VX`8@PBLHzYTLa?JdIbHE03
+!s100 gXA=dn=b>Z2@hV2`gc]:U1
+R6
+33
+R73
+!i10b 1
+R74
+R171
+R172
+!i113 1
+R11
+R12
+Etoplevel
+R13
+R151
+R2
+R3
+!i122 5
+R0
+Z173 8/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/TopLevel.vhd
+Z174 F/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/TopLevel.vhd
+l0
+L20 1
+VFCa<;a8<?R^U<ZKD[QTQj2
+!s100 TMGM1N]j:4gl?hLT<M<KU0
+R6
+33
+R25
+!i10b 1
+R26
+Z175 !s90 -quiet|-modelsimini|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/vunit_out/modelsim/modelsim.ini|-2008|-work|lib|/home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/TopLevel.vhd|
+Z176 !s107 /home/borg/Documents/Z01.1-Iodo-master/Z01.1-Iodo/Projetos/B-LogicaCombinacional/src/TopLevel.vhd|
+!i113 1
+R11
+R12
+Artl
+R151
+R2
+R3
+DEx4 work 8 toplevel 0 22 FCa<;a8<?R^U<ZKD[QTQj2
+!i122 5
+l40
+L31 13
+V9T`OLbRZW1V6fiPzo>0Pn0
+!s100 GgI8@9c=GUV9C_=o_YUz52
+R6
+33
+R25
+!i10b 1
+R26
+R175
+R176
+!i113 1
+R11
+R12

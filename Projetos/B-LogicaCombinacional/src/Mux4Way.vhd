@@ -12,7 +12,21 @@ entity Mux4Way is
 end entity;
 
 architecture arch of Mux4Way is
-begin
-
+begin		
+	process(sel)
+	begin
+		case sel is 
+			when "00" =>
+				q <= a;
+			when "01" =>
+				q <= b;
+			when "10" =>
+				q <= c;
+			when "11" =>
+				q <= d; 
+		  when others =>
+				q <= '0';
+	  end case;
+	end process;
 
 end architecture;
