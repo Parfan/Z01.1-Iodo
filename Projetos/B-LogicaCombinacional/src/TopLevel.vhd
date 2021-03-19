@@ -38,6 +38,7 @@ architecture rtl of TopLevel is
 -- implementacao
 ---------------
 begin
-          
+ 
+	LEDR(0) <= (not ((SW(0) and SW(1)) or SW(1))) or (SW(2) nand (SW(0) and SW(1)));
 
 end rtl;
