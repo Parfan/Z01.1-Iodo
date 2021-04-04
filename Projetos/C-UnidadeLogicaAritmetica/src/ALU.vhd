@@ -33,7 +33,7 @@ entity ALU is
 			nx:    in STD_LOGIC;                     -- inverte a entrada x
 			zy:    in STD_LOGIC;                     -- zera a entrada y
 			ny:    in STD_LOGIC;                     -- inverte a entrada y
-			f:     in STD_LOGIC;                     -- se 0 calcula x & y, senão x + y
+			f:     in STD_LOGIC;					 -- se 0 calcula x & y, senão x + y
 			no:    in STD_LOGIC;                     -- inverte o valor da saída
 			zr:    out STD_LOGIC;                    -- setado se saída igual a zero
 			ng:    out STD_LOGIC;                    -- setado se saída é negativa
@@ -97,5 +97,21 @@ architecture  rtl OF alu is
 
 begin
   -- Implementação vem aqui!
+	A0 : zerador16 port map (zx, x, zxout);		--zerador de x
+  	A1 : zerador16 port map (zy, y, zyout);		--zerador de y
+
+  	A2 : inversor16 port map (nx, zxout, nxout); 	--inversor de x
+  	A3 : inversor16 port map (ny, zyout, nyout); 	--inversor de y
+
+  	A4 : And16 port map (nxout, nyout, andout);	--and de x e y	  
+  	A5 : Add16 port map (nxout, nyout, adderout);	--adder de x e y
+
+	A6 : Mux16 port map (andout, adderout, f, muxout);  --mux para and ou add
+
+	A7 : inversor16 port map (no, muxout, precomp); --inverte saida do mux
+
+	A8 : comparador16 port map (precomp, zr, ng); --comparador
+
+	saida <= precomp; --saida da ALU
 
 end architecture;
