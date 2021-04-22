@@ -26,25 +26,42 @@ end entity;
 
 architecture arch of PC is
 
- signal muxOut : std_logic_vector(15 downto 0);
+    signal muxOut : std_logic_vector(15 downto 0);
 
-  component Inc16 is
-      port(
-          a   :  in STD_LOGIC_VECTOR(15 downto 0);
-          q   : out STD_LOGIC_VECTOR(15 downto 0)
-          );
-  end component;
-
-  component Register16 is
-      port(
-          clock:   in STD_LOGIC;
-          input:   in STD_LOGIC_VECTOR(15 downto 0);
-          load:    in STD_LOGIC;
-          output: out STD_LOGIC_VECTOR(15 downto 0)
+    component Inc16 is
+        port(
+            a:  in STD_LOGIC_VECTOR(15 downto 0);
+            q: out STD_LOGIC_VECTOR(15 downto 0)
         );
     end component;
 
+    component Register16 is
+        port(
+            clock:   in STD_LOGIC;
+            input:   in STD_LOGIC_VECTOR(15 downto 0);
+            load:    in STD_LOGIC;
+            output: out STD_LOGIC_VECTOR(15 downto 0)
+        );
+    end component;
+
+    component Mux16 is
+        port(
+            a:   in STD_LOGIC_VECTOR(15 downto 0);
+			b:   in STD_LOGIC_VECTOR(15 downto 0);
+			sel: in STD_LOGIC;
+			q:  out STD_LOGIC_VECTOR(15 downto 0)
+        );
+    end component;
+
+    signal  muxincs, muxloads, muxresets, preout, incs: std_logic_vector(15 downto 0);
+
 begin
 
-
+    inc:        Inc16 port map (preout, incs);
+    mux16inc:   Mux16 port map(preout, incs, increment, muxincs);
+    mux16load:  Mux16 port map(muxincs, input, load, muxloads);
+    mux16reset: Mux16 port map(muxloads, "0000000000000000", reset, muxresets);
+    register1:  Register16 port map (clock, muxresets, '1', preout);
+    output <= preout;
+    
 end architecture;
