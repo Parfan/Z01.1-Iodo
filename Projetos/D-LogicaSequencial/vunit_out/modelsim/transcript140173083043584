@@ -1,0 +1,30 @@
+# do /home/borg/.local/lib/python3.8/site-packages/vunit/sim_if/tcl_read_eval_loop.tcl
+# vsim -modelsimini /home/borg/Desktop/elementos/Z01.1-Iodo/Projetos/D-LogicaSequencial/vunit_out/modelsim/modelsim.ini -wlf /home/borg/Desktop/elementos/Z01.1-Iodo/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopt.all_19a04691ebde4105e54fcdf8e6a8d80b3a1b8fe6/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_flipflopt(tb) -L vunit_lib -L lib -g/tb_flipflopt/runner_cfg="active python runner : true,enabled_test_cases : ,output path : /home/borg/Desktop/elementos/Z01.1-Iodo/Projetos/D-LogicaSequencial/vunit_out/test_output/lib.tb_flipflopt.all_19a04691ebde4105e54fcdf8e6a8d80b3a1b8fe6/,tb path : /home/borg/Desktop/elementos/Z01.1-Iodo/Projetos/D-LogicaSequencial/testes/,use_color : true" 
+# Start time: 16:55:32 on Apr 22,2021
+# ** Warning: Design size of 21408 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em teste: 0
+#    Time: 200 ps  Iteration: 0  Process: /tb_flipflopt/main File: /home/borg/Desktop/elementos/Z01.1-Iodo/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd
+# Break in Process main at /home/borg/Desktop/elementos/Z01.1-Iodo/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd line 42
+# Stopped at /home/borg/Desktop/elementos/Z01.1-Iodo/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd line 42
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  /home/borg/Desktop/elementos/Z01.1-Iodo/Projetos/D-LogicaSequencial/testes/tb_FlipFlopT.vhd 42 return [address 0xf6d6d677] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   37 : 
+#   38 :     -- IMPLEMENTE AQUI!
+#   39 :         -- Teste: 0
+#   40 : 		  T <= '0';
+#   41 :     wait until clk'event and clk='0';
+# ->42 : 		  assert(q = '0' and notq = '1')  report "Falha em teste: 0" severity error;
+#   43 : 
+#   44 :         -- Teste: 1
+#   45 : 		  T <= '1';
+#   46 :     wait until clk'event and clk='0';
+# 
+# End time: 16:55:32 on Apr 22,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
