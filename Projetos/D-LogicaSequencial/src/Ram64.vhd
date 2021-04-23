@@ -59,18 +59,98 @@ architecture arch of Ram64 is
 	signal output0, output1, output2, output3, output4, output5, output6, output7 : STD_LOGIC_VECTOR(15 downto 0);
 
 begin
-	D0 : DMux8Way port map (load,address(5 downto 3),load0, load1, load2, load3, load4, load5, load6, load7);
+	DMX64: DMux8Way port map (
+		a => load,
+		sel => address (5 downto 3),
+		q0 => load0,
+		q1 => load1,
+		q2 => load2,
+		q3 => load3,
+		q4 => load4,
+		q5 => load5,
+		q6 => load6,
+		q7 => load7
 	
-	R0 : Ram8 port map (clock, input, load0, address(2 downto 0), output0);
-	R1 : Ram8 port map (clock, input, load1, address(2 downto 0), output1);
-	R2 : Ram8 port map (clock, input, load2, address(2 downto 0), output2);
-	R3 : Ram8 port map (clock, input, load3, address(2 downto 0), output3);
-	R4 : Ram8 port map (clock, input, load4, address(2 downto 0), output4);
-	R5 : Ram8 port map (clock, input, load5, address(2 downto 0), output5);
-	R6 : Ram8 port map (clock, input, load6, address(2 downto 0), output6);
-	R7 : Ram8 port map (clock, input, load7, address(2 downto 0), output7);
-
-	M0 : Mux8Way16 port map (output0, output1, output2, output3, output4, output5, output6, output7,address(5 downto 3),output);
+	);
+	
+	MX64: Mux8Way16 port map(
+		a => output0,
+		b => output1,
+		c => output2,
+		d => output3,
+		e => output4,
+		f => output5,
+		g => output6,
+		h => output7,
+		sel => address(5 downto 3),
+		q => output
+		
+	);
+	
+	RAM0: Ram8 port map (
+		clock => clock,
+		input => input,
+		load => load0,
+		address => address(2 downto 0),
+		output => output0
+	);
+	
+	
+	RAM1: Ram8 port map (
+		clock => clock,
+		input => input,
+		load => load1,
+		address => address(2 downto 0),
+		output => output1
+	);
+	
+	RAM2: Ram8 port map (
+		clock => clock,
+		input => input,
+		load => load2,
+		address => address(2 downto 0),
+		output => output2
+	);
+	
+	RAM3: Ram8 port map (
+		clock => clock,
+		input => input,
+		load => load3,
+		address => address(2 downto 0),
+		output => output3
+	);
+	
+	RAM4: Ram8 port map (
+		clock => clock,
+		input => input,
+		load => load4,
+		address => address(2 downto 0),
+		output => output4
+	);
+	
+	RAM5: Ram8 port map (
+		clock => clock,
+		input => input,
+		load => load5,
+		address => address(2 downto 0),
+		output => output5
+	);
+	
+	RAM6: Ram8 port map (
+		clock => clock,
+		input => input,
+		load => load6,
+		address => address(2 downto 0),
+		output => output6
+	);
+	
+	RAM7: Ram8 port map (
+		clock => clock,
+		input => input,
+		load => load7,
+		address => address(2 downto 0),
+		output => output7
+	);
 
 
 end architecture;

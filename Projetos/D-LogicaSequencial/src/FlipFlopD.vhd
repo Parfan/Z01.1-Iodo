@@ -22,7 +22,7 @@ begin
 	process(clock, clear, preset) begin
 		if (clear = '1') then
 			q <='0';
-		elsif (rising_edge(CLOCK)) then
+		elsif (rising_edge(clock)) then
 			q<=d;
 		end if;
 
