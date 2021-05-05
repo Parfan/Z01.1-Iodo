@@ -12,11 +12,11 @@ leaw $0, %A
 movw (%A), %D
 leaw %1, %A
 subw %D, (%A), %D
-leaw $POSITIVO, $A   
+leaw $POSITIVO, %A   
 jge %D                  ;Salta se o resultado da subtração é positivo
 nop
 
-leaw $FIM, $A           ;Termina a operação se o resultado da subtração é negativo
+leaw $FIM, %A           ;Termina a operação se o resultado da subtração é negativo
 jmp
 nop
 
