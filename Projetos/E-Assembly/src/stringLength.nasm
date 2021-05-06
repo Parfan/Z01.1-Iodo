@@ -26,4 +26,31 @@
 ;  RAM[14] = `?`
 ;  RAM[15] = NULL = 0x0000
 
+leaw $8, %A 
+movw %A, %D 
+leaw $0, %A 
+movw %D, (%A)
 
+LOOP:
+leaw $0, %A 
+movw (%A), %A
+movw (%A), %D
+
+leaw $END, %A 
+je %D
+nop
+
+leaw $0, %A 
+movw (%A), %D 
+addw $1, %D, (%A)
+leaw $LOOP, %A 
+jmp 
+nop
+
+END: 
+leaw $0, %A 
+movw (%A), %D ; obtém i do ultimo caractere (ex.: 12)
+leaw $8, %A 
+subw %D, %A, %D ; D = D - 8 => tamanho da string: (12 = NULL, 8 = caractere inicial -> Tamanho = 4 (12 - 8))
+leaw $0, %A 
+movw %D, (%A) 
