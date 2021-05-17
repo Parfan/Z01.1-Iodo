@@ -135,9 +135,11 @@ BEGIN
     ----------------------------------------
     -- Controla LOAD do display e da ram e LED ! --
     ----------------------------------------
-    --LOAD_DISPLAY <= ??????; 
-    --LOAD_RAM     <= ??????; 
-    --LOAD_LED     <= ??????; 
+    LOAD_DISPLAY <= '1' when address(14) = '1' and not (address = "101001011000000" or address = "101001011000001");
+
+    LOAD_RAM     <= '1' when address(14) = '0'; 
+
+    LOAD_LED     <= '1' when address = "101001011000000";
 
     ----------------------------------------
     -- SW e LED                           --
@@ -153,7 +155,8 @@ BEGIN
     -- SAIDA do memory I/O                --
     ----------------------------------------
     -- precisar ser: RAM ou SW16
-    -- OUTPUT <= ?????? ;
-
+    OUTPUT <= OUTPUT_RAM when address(14) = '0' else
+      SW16 when address = "101001011000001";
+ 
 
 END logic;
