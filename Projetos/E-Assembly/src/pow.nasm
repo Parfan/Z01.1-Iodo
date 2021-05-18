@@ -8,29 +8,34 @@
 
 
 
-leaw $1, %A
+
+leaw $R1, %A
 movw (%A), %D
-leaw $0, %A
+leaw $R0, %A
 movw %D, (%A)
-leaw $2, %A
-decw %D
+leaw $R2, %A
+movw (%A), %D
+incw %D
 movw %D, (%A)
 
 pow:
-leaw $2, %A
+leaw $R2, %A
 movw (%A), %D
+leaw $R1, %A
+subw (%A), %D, %D
 
 leaw $FIM, %A
-jle %D
+je %D
 nop
 
-decw %D
-leaw $2, %A
-movw %D, (%A)
-leaw $1, %A
+leaw $R1, %A
 movw (%A), %D
-leaw $0, %A
+leaw $R0, %A
 addw (%A), %D, %D
+movw %D, (%A)
+leaw $R2, %A
+movw (%A), %D
+incw %D
 movw %D, (%A)
 
 leaw $pow, %A
