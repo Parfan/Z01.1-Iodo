@@ -16,20 +16,20 @@ public class Code {
      * @return Opcode (String de 4 bits) com código em linguagem de máquina para a instrução.
      */
     public static String dest(String[] mnemnonic) {
-        if (mnemnonic.length == 4 && mnemnonic[0] == "movw"){
-            if (mnemnonic[2] == "%A") {
+        if (mnemnonic.length == 4 && mnemnonic[0].equals("movw")){
+            if (mnemnonic[2].equals("%A")) {
                 switch (mnemnonic[3]) {
                     case "%D"   : return "0011";
                     default     : return "0101";
                 }
             }
-            if (mnemnonic[2] == "%D") {
+            if (mnemnonic[2].equals("%D")) {
                 switch (mnemnonic[3]) {
                     case "%A"   : return "0011";
                     default     : return "0110";
                 }
             }
-            if (mnemnonic[2] == "(%A)") {
+            if (mnemnonic[2].equals("(%A)")) {
                 switch (mnemnonic[3]) {
                     case "%A"   : return "0101";
                     default     : return "0110";
@@ -45,24 +45,24 @@ public class Code {
             }
         }
 
-        if (mnemnonic.length == 5 && mnemnonic[0] == "movw") {
+        if (mnemnonic.length == 5 && mnemnonic[0].equals("movw")) {
             return "0111";
         }
 
         if (mnemnonic.length == 5) {
-            if (mnemnonic[3] == "%A") {
+            if (mnemnonic[3].equals("%A")) {
                 switch (mnemnonic[4]) {
                     case "%D"   : return "0011";
                     default     : return "0101";
                 }
             }
-            if (mnemnonic[3] == "%D") {
+            if (mnemnonic[3].equals("%D")) {
                 switch (mnemnonic[4]) {
                     case "%A"   : return "0011";
                     default     : return "0110";
                 }
             }
-            if (mnemnonic[3] == "(%A)") {
+            if (mnemnonic[3].equals("(%A)")) {
                 switch (mnemnonic[4]) {
                     case "%A"   : return "0101";
                     default     : return "0110";
@@ -83,142 +83,91 @@ public class Code {
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
     public static String comp(String[] mnemnonic) {
-        if (mnemnonic[0] == "movw") {
-            switch (mnemnonic[1]) {
-                case "%A"   : return "000110000";
-                case "%D"   : return "000001100";
-                default     : return "001110000";
+        int movInt = 0;
+
+        String comp = "";
+
+        if (mnemnonic[0].startsWith("mov")) {
+            comp = mnemnonic[1];
+            movInt = 1;
+        } else if (mnemnonic[0].startsWith("add")) {
+            comp = mnemnonic[1]+"+"+mnemnonic[2];
+        } else if (mnemnonic[0].startsWith("sub")) {
+            comp = mnemnonic[1]+"-"+mnemnonic[2];
+        } else if (mnemnonic[0].startsWith("rsub")) {
+            comp = mnemnonic[2]+"-"+mnemnonic[1];
+        } else if (mnemnonic[0].startsWith("inc")) {
+            comp = mnemnonic[1]+"+1";
+        } else if (mnemnonic[0].startsWith("dec")) {
+            comp = mnemnonic[1]+"-1";
+        } else if (mnemnonic[0].startsWith("not")) {
+            comp = "!"+mnemnonic[1];
+        } else if (mnemnonic[0].startsWith("neg")) {
+            comp = "-"+mnemnonic[1];
+        } else if (mnemnonic[0].startsWith("and")) {
+            comp = mnemnonic[1]+"&"+mnemnonic[2];
+        } else if (mnemnonic[0].startsWith("or")) {
+            comp = mnemnonic[1]+"|"+mnemnonic[2];
+        } else if (mnemnonic[0].startsWith("nop")) {
+            comp = "$0";
+        } else if ( mnemnonic[0].startsWith("jg")  ||
+                mnemnonic[0].startsWith("je")  ||
+                mnemnonic[0].startsWith("jge") ||
+                mnemnonic[0].startsWith("jl")  ||
+                mnemnonic[0].startsWith("jne") ||
+                mnemnonic[0].startsWith("jle") ||
+                mnemnonic[0].startsWith("jmp") )
+        {
+            if (mnemnonic.length == 1)
+                comp = "%X";
+            else
+                comp = mnemnonic[1];
+        }
+
+        String r2 = "0";     // Operacao entre S e D
+        String r1 = "0";     // A = 0; (A) = 1
+        String r0 = "0";     // A = 0; D = 1
+        boolean Xs = false;
+        boolean Xd = false;
+
+        for (int i = 0; i < mnemnonic.length - movInt; i++) {
+            if (mnemnonic[i].contains("(%A)")) {
+                r0 = "1";
+                break;
             }
         }
 
-        if (mnemnonic[0] == "addw") {
-            if (mnemnonic[1] == "$1") {
-                switch (mnemnonic[2]) {
-                    case "%A"   : return "000110111";
-                    case "%D"   : return "000011111";
-                    default     : return "001110111";
-                }
-            }
-            if (mnemnonic[2] == "%D") {
-                switch (mnemnonic[1]) {
-                    case "%A"   : return "000000010";
-                    default     : return "001000010";
-                }
-            }
-            if (mnemnonic[1] == "%D") {
-                switch (mnemnonic[2]) {
-                    case "%A"   : return "000000010";
-                    default     : return "001000010";
-                }
-            }
-        }
+        comp = comp.replace("(%A)", "%Y");
+        comp = comp.replace("%A", "%Y");
+        comp = comp.replace("%D", "%X");
+        comp = comp.replace("$", "");
 
-        if (mnemnonic[0] == "subw") {
-            if (mnemnonic[2] == "$1") {
-                switch (mnemnonic[1]) {
-                    case "%A"   : return "000110010";
-                    case "%D"   : return "000001110";
-                    default     : return "001110010";
-                }
-            }
-            if (mnemnonic[2] == "%D") {
-                switch (mnemnonic[1]) {
-                    case "%A"   : return "000000111";
-                    default     : return "001000111";
-                }
-            }
-            if (mnemnonic[1] == "%D") {
-                switch (mnemnonic[2]) {
-                    case "%A"   : return "000010011";
-                    default     : return "001010011";
-                }
-            }
+        String c = "000000";
+        switch (comp) {
+            case "0":    c = "101010"; break;
+            case "1":    c = "111111"; break;
+            case "-1":   c = "111010"; break;
+            case "%X":    c = "001100"; break;
+            case "%Y":    c = "110000"; break;
+            case "!%X":   c = "001101"; break;
+            case "!%Y":   c = "110001"; break;
+            case "-%X":   c = "001111"; break;
+            case "-%Y":   c = "110011"; break;
+            case "%X+1":  case "1+%X": c = "011111"; break;
+            case "%Y+1":  case "1+%Y": c = "110111";  break;
+            case "%X-1":  c = "001110"; break;
+            case "%Y-1":  c = "110010"; break;
+            case "%X+%Y": c = "000010"; break;
+            case "%Y+%X": c = "000010"; break;
+            case "%X-%Y": c = "010011"; break;
+            case "%Y-%X": c = "000111"; break;
+            case "%X&%Y": c = "000000"; break;
+            case "%Y&%X": c = "000000"; break;
+            case "%X|%Y": c = "010101"; break;
+            case "%Y|%X": c = "010101"; break;
+            default: c = "000000";
         }
-
-        if (mnemnonic[0] == "rsubw") {
-            if (mnemnonic[1] == "$1") {
-                switch (mnemnonic[2]) {
-                    case "%A"   : return "000110010";
-                    case "%D"   : return "000001110";
-                    default     : return "001110010";
-                }
-            }
-            if (mnemnonic[1] == "%D") {
-                switch (mnemnonic[2]) {
-                    case "%A"   : return "000000111";
-                    default     : return "001000111";
-                }
-            }
-            if (mnemnonic[2] == "%D") {
-                switch (mnemnonic[1]) {
-                    case "%A"   : return "000010011";
-                    default     : return "001010011";
-                }
-            }
-        }
-
-        if (mnemnonic[0] == "incw") {
-            switch (mnemnonic[1]) {
-                case "%A"   : return "000110111";
-                case "%D"   : return "000011111";
-                default     : return "001110111";
-            }
-        }
-
-        if (mnemnonic[0] == "decw") {
-            switch (mnemnonic[1]) {
-                case "%A"   : return "000110010";
-                case "%D"   : return "000001110";
-                default     : return "001110010";
-            }
-        }
-
-        if (mnemnonic[0] == "notw") {
-            switch (mnemnonic[1]) {
-                case "%A"   : return "000110001";
-                case "%D"   : return "000001101";
-                default     : return "001110001";
-            }
-        }
-
-        if (mnemnonic[0] == "negw") {
-            switch (mnemnonic[1]) {
-                case "%A"   : return "000110011";
-                case "%D"   : return "000001111";
-                default     : return "001110011";
-            }
-        }
-
-        if (mnemnonic[0] == "andw") {
-            if (mnemnonic[1] == "%A") {
-                return "000000000";
-            }
-            if (mnemnonic[1] == "(%A)") {
-                return "001000000";
-            }
-            if (mnemnonic[1] == "%D") {
-                switch (mnemnonic[2]) {
-                    case "%A"   : return "000000000";
-                    default     : return "001000000";
-                }
-            }
-        }
-
-        if (mnemnonic[0] == "orw") {
-            if (mnemnonic[1] == "%A") {
-                return "000010101";
-            }
-            if (mnemnonic[1] == "(%A)") {
-                return "001010101";
-            }
-            if (mnemnonic[1] == "%D") {
-                switch (mnemnonic[2]) {
-                    case "%A"   : return "000010101";
-                    default     : return "001010101";
-                }
-            }
-        }
-        return "000001100";
+        return r2 + r1 + r0 + c;
     }
 
     /**
