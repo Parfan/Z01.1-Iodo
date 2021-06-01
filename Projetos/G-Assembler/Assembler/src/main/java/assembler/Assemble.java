@@ -58,8 +58,12 @@ public class Assemble {
                 /* TODO: implementar */
                 // deve verificar se tal label já existe na tabela,
                 // se não, deve inserir. Caso contrário, ignorar.
+                if(!table.contains(label)){
+                    table.addEntry(label,romAddress);
+                }
+            }else{
+                romAddress++;
             }
-            romAddress++;
         }
         parser.close();
 
@@ -78,8 +82,12 @@ public class Assemble {
                     // deve verificar se tal símbolo já existe na tabela,
                     // se não, deve inserir associando um endereço de
                     // memória RAM a ele.
+                    if(!table.contains(symbol)){
+                        table.addEntry(symbol,ramAddress);
+                    }
                 }
             }
+            ramAddress++;
         }
         parser.close();
         return table;
@@ -106,9 +114,24 @@ public class Assemble {
             switch (parser.commandType(parser.command())){
                 /* TODO: implementar */
                 case C_COMMAND:
-                break;
-            case A_COMMAND:
-                break;
+                    instruction = "";
+                    String[] instructionSet = parser.instruction(parser.command());
+                    String binary = Code.comp(instructionSet);
+                    String destination = Code.dest(instructionSet);
+                    String jump = Code.jump(instructionSet);
+                    instruction += "10" + binary + destination + jump;
+                    break;
+                case A_COMMAND:
+                    String decimal = parser.symbol(parser.command());
+                    try{
+                        String decToBinary = Code.toBinary(decimal);
+                        instruction = "00" + decToBinary;
+                    } catch (Exception e){
+                        String ramAddress = table.getAddress(decimal).toString();
+                        String ramToBinary = Code.toBinary(ramAddress);
+                        instruction = "00" + ramToBinary;
+                    }
+                    break;
             default:
                 continue;
             }
