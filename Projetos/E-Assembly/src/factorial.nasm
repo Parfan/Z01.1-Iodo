@@ -5,103 +5,82 @@
 
 ; Calcula o fatorial do número em R0 e armazena o valor em R1.
 
-;R0 - Fatorial
-;R1 - Resultado
-;R2 - Contador Loop Mult
-;R3 - Contador Loop Factorial
-
-leaw $0, %A
-movw (%A), %D
-
-;Salva o contador mult como n-2
-decw %D
-decw %D
-leaw $2, %A
-movw %D, (%A)
-
-;Salva o contador factorial como n-3
-decw %D
+;GARANTE QUE R3=0
 leaw $3, %A
-movw %D, (%A)
+movw $0, (%A)
 
-;Ponto de partida do loop factorial
-LOOPFACTORIAL:
+;VERIFICA SE R0=0
+leaw $1, %A
+movw $1, (%A)
 
-;;;; MULT
-;Define o valor inicial em RAM[1] como RAM[0]
 leaw $0, %A
 movw (%A), %D
-leaw $1, %A
-movw %D, (%A)
 
-;Ponto de partida do loop mult
-LOOPMULT:
-
-leaw $2, %A
-movw (%A), %D
-
-;Executa o loop mult se RAM[2] > 0
-leaw $ENDMULT, %A
-jle %D
+leaw $FIM, %A
+je %D
 nop
 
-;Lê o contador do loop mult e decrementa
-decw %D
-leaw $2, %A
-movw %D, (%A)
-
-;Soma RAM[0] com RAM[1] e guarda em RAM[1]
+;COPIA O VALOR DE R0 PARA R1
 leaw $0, %A
 movw (%A), %D
 leaw $1, %A
+movw %D, (%A)
+
+;DECREMENTA O VALOR DE R0 (e R1) E MOVE PARA R4
+decw %D
+leaw $4, %A
+movw %D, (%A)
+
+FATORIAL:
+;SE R4=0, PARA O FATORIAL
+leaw $4, %A
+movw (%A), %D
+leaw $FIM, %A
+je %D
+nop
+
+;COPIA R4 EM R2
+leaw $2, %A
+movw %D, (%A)
+
+
+;MULTIPLICA R1 COM R2 E SALVA EM R3
+MULT:
+leaw $1, %A
+movw (%A), %D
+
+leaw $3, %A
 addw (%A), %D, %D
 movw %D, (%A)
 
-;Volta ao topo do loop mult
-leaw $LOOPMULT, %A
-jmp
-nop
-
-;Finaliza uma multiplicação
-ENDMULT:
-
-;Salva R1 em R0
-leaw $1, %A
-movw (%A), %D
-leaw $0, %A
-movw %D, (%A)
-
-;Reestabelece e decrementa os loops
-leaw $3, %A
-movw (%A), %D
 leaw $2, %A
-movw %D, (%A)
-leaw $3, %A
+movw (%A), %D
 decw %D
 movw %D, (%A)
 
-;Se o contador factorial for < 0, encerra as operações
-leaw $ENDFACTORIAL, %A
-jl %D
+leaw $MULT, %A
+jne %D
 nop
 
-;Caso contrário, continua a iteração
-leaw $LOOPFACTORIAL, %A
+ENDMULT:
+;COPIA O RESULTADO DA MULTIPLICACAO (EM R3) PARA R1
+leaw $3, %A
+movw (%A), %D
+leaw $1, %A
+movw %D, (%A)
+
+;DECREMENTA R4
+leaw $4, %A
+movw (%A), %D
+decw %D
+movw %D, (%A)
+
+;ZERA R3
+leaw $3, %A
+movw $0, (%A)
+
+leaw $FATORIAL, %A
 jmp
 nop
 
-;Encerra as operações
-ENDFACTORIAL:
-
-;Caso especial onde R0 = 0
-leaw $0, %A
-movw (%A), %D
-
-leaw %FIM, %A
-jne %D
-nop
-leaw $1, %A
-movw %A, (%A)
-
-;Encerra o programa
 FIM:
